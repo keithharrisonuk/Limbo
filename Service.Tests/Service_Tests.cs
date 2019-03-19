@@ -7,15 +7,10 @@ namespace UnitTests.Services
     public class Service_CanMultiply
     {
         [TestCase(2, 3, 6)]
+        [TestCase(3, 3, 9)]
         public void CanMultiplyNumbers(int a, int b, int expected)
         {
             Assert.AreEqual(expected, new Service().Multiply(a, b));
-        }
-
-        [Test]
-        public void CanMultiplyNumbers1()
-        {
-            Assert.AreEqual(9, new Service().Multiply(3,3));
         }
 
         [TestCase(1, 2, 3)]
