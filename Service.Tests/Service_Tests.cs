@@ -20,7 +20,5 @@ namespace UnitTests.Services
         {
             Assert.AreEqual(expected, new Service().Add(a, b));
         }
-        // Oh no!
-        
     }
 }
