@@ -17,5 +17,11 @@ namespace UnitTests.Services
         {
             Assert.AreEqual(9, new Service().Multiply(3,3));
         }
+
+        [Test]
+        public void Add()
+        {
+            Assert.AreEqual(6, new Service().Add(3,3));
+        }
     }
 }

@@ -8,6 +8,11 @@ namespace Services
         {
             return a * b;
         }
+        
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
 
