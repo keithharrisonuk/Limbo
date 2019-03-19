@@ -18,10 +18,10 @@ namespace UnitTests.Services
             Assert.AreEqual(9, new Service().Multiply(3,3));
         }
 
-        [Test]
-        public void Add()
+        [TestCase(1, 2, 3)]
+        public void Add(int a, int b, int expected)
         {
-            Assert.AreEqual(6, new Service().Add(3,3));
+            Assert.AreEqual(expected, new Service().Add(a, b));
         }
     }
 }
