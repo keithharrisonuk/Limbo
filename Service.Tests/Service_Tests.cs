@@ -20,6 +20,7 @@ namespace UnitTests.Services
 
         [TestCase(1, 2, 3)]
         [TestCase(4, 2, 6)]
+        [TestCase(4, 8, 12)]
         public void Add(int a, int b, int expected)
         {
             Assert.AreEqual(expected, new Service().Add(a, b));
