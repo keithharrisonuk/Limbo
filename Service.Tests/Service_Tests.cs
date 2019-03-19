@@ -8,6 +8,7 @@ namespace UnitTests.Services
     {
         [TestCase(2, 3, 6)]
         [TestCase(3, 3, 9)]
+        [TestCase(1, 1, 1)]
         public void CanMultiplyNumbers(int a, int b, int expected)
         {
             Assert.AreEqual(expected, new Service().Multiply(a, b));
